@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit 
+    stopOnFailure="false"
+    bootstrap="bootstrap.php"
+> 
+   <filter>
+        <whitelist>
+            <directory suffix=".php">../src</directory>
+        </whitelist>
+    </filter>
+    <testsuites>
+        <testsuite name="MeasurementUnit">
+            <directory suffix="Test.php">../tests</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
